@@ -1,5 +1,5 @@
 
-## Get started
+## Get Started
 From the Terminal, simply cd into the project's directory and run grunt.
 
 ## Technology
