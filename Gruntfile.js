@@ -16,11 +16,11 @@ module.exports = function(grunt) {
 	uglify: {
     	my_target: {
       		files:[
-      			//{
-	        	//	expand: true,
-	          	//	src: 'lib/**/*.js',
-	          	//	ext: '.min.js'
-	      		//},
+      			{
+	        		expand: true,
+	          		src: 'lib/**/*.js',
+	          		ext: '.min.js'
+	      		},
 	      		{
 	        		expand: true,
 	          		src: 'js/*.js',
