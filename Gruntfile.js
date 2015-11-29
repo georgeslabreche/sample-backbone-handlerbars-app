@@ -14,13 +14,17 @@ module.exports = function(grunt) {
 	    }
 	},
 	uglify: {
-    	my_target: {
+    	lib: {
       		files:[
       			{
 	        		expand: true,
 	          		src: 'lib/**/*.js',
 	          		ext: '.min.js'
-	      		},
+	      		}
+	      	]
+    	},
+    	myjs: {
+      		files:[
 	      		{
 	        		expand: true,
 	          		src: 'js/*.js',
@@ -54,6 +58,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['handlebars', 'concat', 'uglify']);
+  grunt.registerTask('init', ['bower', 'handlebars', 'concat', 'uglify']);
+  grunt.registerTask('default', ['handlebars', 'concat', 'uglify:myjs']);
 
 };
