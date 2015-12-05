@@ -9,30 +9,19 @@ module.exports = function(grunt) {
 	    }
 	},
 	bower: {
-    	install: {
-	       //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
-	    }
+		install: {
+
+		}
 	},
 	uglify: {
-    	lib: {
-      		files:[
-      			{
-	        		expand: true,
-	          		src: 'lib/**/*.js',
-	          		ext: '.min.js'
-	      		}
-	      	]
-    	},
-    	myjs: {
-      		files:[
-	      		{
-	        		expand: true,
-	          		src: 'js/*.js',
-	          		dest: 'js/dist',
-	          		ext: '.min.js'
-	      		},
-	      	]
-    	}
+  		files:[
+      		{
+        		expand: true,
+          		src: 'js/*.js',
+          		dest: 'js/dist',
+          		ext: '.min.js'
+      		},
+      	]
   	},
   	concat: {
   		options: {
