@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 		}
 	},
 	uglify: {
-  		files:[
-      		{
-        		expand: true,
-          		src: 'js/*.js',
-          		dest: 'js/dist',
-          		ext: '.min.js'
-      		},
-      	]
+		target: {
+	  		files:[{
+					expand: true,
+			  		src: 'js/*.js',
+			  		dest: 'js/dist',
+			  		ext: '.min.js'
+		    }]
+		}
   	},
   	concat: {
   		options: {
